@@ -1,0 +1,6 @@
+public class CodiceFiscaleNonValidoException extends Exception {
+    public CodiceFiscaleNonValidoException ()
+    {
+        super("il codice fiscale fornito in registrazione non è valido");
+    }
+}
