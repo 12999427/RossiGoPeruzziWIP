@@ -1,29 +1,20 @@
+package Servizio;
+
+import Modello.Utente;
+import Modello.Veicolo;
+
 import java.util.HashMap;
-import java.sql.*;
 
 public class FlottaService {
-    // gestisce veicoli, utenti e noleggi attivi). Deve lavorare con il tipo Veicolo, mai con Bici
-    // o Monopattino direttamente: è questo il polimorfismo
-    private static Connection connection = null;
+    // gestisce veicoli, utenti e noleggi attivi). Deve lavorare con il tipo Modello.Veicolo, mai con Bici
+    // o Modello.Monopattino direttamente: è questo il polimorfismo
 
     private static HashMap<String, Veicolo> veicoli;
     private static HashMap<String, Utente> utenti;
 
-    public FlottaService(String url) throws SQLException
+    public FlottaService()
     {
-        connection = DriverManager.getConnection(url);
-        if (!testConnection()) throw new RuntimeException("Database invalido");
-        this.veicoli = veicoli;
-    }
 
-    private boolean testConnection ()
-    {
-        try {
-            return connection.isValid(5);
-        } catch (SQLException e)
-        {
-            return false;
-        }
     }
 
     public static void registraVeicolo(Veicolo v)

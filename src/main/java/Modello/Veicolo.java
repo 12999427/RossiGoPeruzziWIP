@@ -1,3 +1,5 @@
+package Modello;
+
 public abstract class Veicolo {
     private String codice;
     private int batteria;

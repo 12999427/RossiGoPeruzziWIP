@@ -1,3 +1,5 @@
+package Modello;
+
 import java.time.LocalTime;
 
 public class Noleggio {

@@ -1,3 +1,5 @@
+package Eccezioni;
+
 public class CodiceFiscaleNonValidoException extends Exception {
     public CodiceFiscaleNonValidoException ()
     {

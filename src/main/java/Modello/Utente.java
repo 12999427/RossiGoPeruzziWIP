@@ -1,3 +1,5 @@
+package Modello;
+
 public class Utente {
     private String id;
     private String nome;

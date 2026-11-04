@@ -1,3 +1,5 @@
+package Eccezioni;
+
 public class CreditoInsufficienteException extends Exception {
     public CreditoInsufficienteException ()
     {

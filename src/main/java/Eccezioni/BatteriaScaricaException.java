@@ -1,3 +1,5 @@
+package Eccezioni;
+
 class BattieraScaricaException extends Exception {
     private int batteriaAttuale;
     public BattieraScaricaException(int batteriaAttuale)

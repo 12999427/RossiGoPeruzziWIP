@@ -1,3 +1,5 @@
+package Eccezioni;
+
 public class UtenteNonTrovatoException extends Exception {
     public UtenteNonTrovatoException()
     {

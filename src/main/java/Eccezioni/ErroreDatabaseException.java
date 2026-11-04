@@ -1,3 +1,5 @@
+package Eccezioni;
+
 public class ErroreDatabaseException extends Exception {
     public ErroreDatabaseException()
     {

@@ -1,3 +1,5 @@
+package Modello;
+
 public class Monopattino extends Veicolo {
     private boolean limitatoZonaPedonale;
 

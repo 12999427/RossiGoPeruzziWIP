@@ -1,3 +1,5 @@
+package Modello;
+
 public class Bicicletta extends Veicolo {
     private int numMarce;
 
