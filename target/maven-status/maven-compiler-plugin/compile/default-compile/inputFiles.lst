@@ -1,1 +1,16 @@
-C:\Users\12999427\IdeaProjects\RossiGoPeruzzi\src\main\java\Main.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/App/Main.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/BatteriaScaricaException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/CodiceFiscaleNonValidoException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/CreditoInsufficienteException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/ErroreDatabaseException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/RossiGoException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/UtenteNonTrovatoException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Eccezioni/VeicoloNonDisponibileException.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Modello/Bicicletta.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Modello/Monopattino.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Modello/Noleggio.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Modello/StatoVeicolo.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Modello/Utente.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Modello/Veicolo.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Persistenza/DatabaseManager.java
+/Users/sor-team/IdeaProjects/RossiGoPeruzziWIP/src/main/java/Servizio/FlottaService.java

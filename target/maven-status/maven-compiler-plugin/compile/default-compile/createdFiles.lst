@@ -1,1 +1,16 @@
-Main.class
+Persistenza/DatabaseManager.class
+Eccezioni/RossiGoException.class
+Modello/Utente.class
+Eccezioni/VeicoloNonDisponibileException.class
+Eccezioni/CodiceFiscaleNonValidoException.class
+Modello/Bicicletta.class
+Eccezioni/CreditoInsufficienteException.class
+Servizio/FlottaService.class
+Eccezioni/UtenteNonTrovatoException.class
+Modello/StatoVeicolo.class
+Modello/Monopattino.class
+Eccezioni/BattieraScaricaException.class
+Modello/Veicolo.class
+App/Main.class
+Modello/Noleggio.class
+Eccezioni/ErroreDatabaseException.class

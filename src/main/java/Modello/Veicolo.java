@@ -46,8 +46,3 @@ public abstract class Veicolo {
     }
 }
 
-enum StatoVeicolo {
-    LIBERO,
-    IN_USO,
-    IN_RICARICA
-}

@@ -1,5 +1,8 @@
 package Modello;
 
+import org.apache.commons.validator.routines.DomainValidator;
+import org.apache.commons.validator.routines.EmailValidator;
+
 public class Utente {
     private String id;
     private String nome;
@@ -40,6 +43,8 @@ public class Utente {
 
     public void setEmail(String email) {
         if (email.isBlank()) throw new IllegalArgumentException("email utente is empty");
+        EmailValidator ev = EmailValidator.getInstance();
+        if (!ev.isValid(email)) throw new IllegalArgumentException("email is not valid - commons validator");
         this.email = email;
     }
 
@@ -49,6 +54,7 @@ public class Utente {
 
     public void setCodiceFiscale(String codiceFiscale) {
         if (codiceFiscale.isBlank() || codiceFiscale.length() != 16) throw new IllegalArgumentException("codiceFiscale utente is empty");
+
         this.codiceFiscale = codiceFiscale;
     }
 

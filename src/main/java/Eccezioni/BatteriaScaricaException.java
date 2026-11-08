@@ -1,6 +1,6 @@
 package Eccezioni;
 
-class BattieraScaricaException extends Exception {
+class BattieraScaricaException extends RossiGoException {
     private int batteriaAttuale;
     public BattieraScaricaException(int batteriaAttuale)
     {
