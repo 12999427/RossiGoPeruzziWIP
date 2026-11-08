@@ -17,7 +17,7 @@ public class Monopattino extends Veicolo {
 
     @Override
     public double calcolaCosto(int minuti) {
-        return 0.25;
+        return minuti * 0.25;
     }
 
     @Override

@@ -1,8 +1,16 @@
 package Eccezioni;
 
 public class RossiGoException extends Exception {
-    protected RossiGoException(String message)
-    {
+    public RossiGoException() {
+        super();
+    }
+
+    public RossiGoException(String message) {
         super(message);
     }
+
+    public RossiGoException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
+

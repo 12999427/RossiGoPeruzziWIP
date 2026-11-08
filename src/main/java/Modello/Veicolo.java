@@ -32,9 +32,9 @@ public abstract class Veicolo {
         this.batteria = batteria;
     }
 
-    public void scalaBatteria(int batteria)
+    public void scalaBatteria(int consumo)
     {
-        setBatteria(getBatteria() - batteria);
+        setBatteria(Math.max(0, getBatteria() - consumo));
     }
 
     public StatoVeicolo getStato() {

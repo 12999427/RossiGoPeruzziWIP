@@ -23,11 +23,12 @@ public class DatabaseManager {
         try {
             if (instance == null) {
                 instance = new DatabaseManager("jdbc:sqlite:rossigo.db");
+                instance.createTablesIfNotExist();
             }
             return instance;
         } catch (SQLException e)
         {
-            throw new ErroreDatabaseException();
+            throw new ErroreDatabaseException("Errore di connessione al database: " + e.getMessage());
         }
     }
 
@@ -41,7 +42,7 @@ public class DatabaseManager {
         }
     }
 
-    public void createTablesIfNotExist(String nomePiatto, double prezzo, int quantita) throws ErroreDatabaseException {
+    public void createTablesIfNotExist() throws ErroreDatabaseException {
 
         if (!testConnection())
             throw new ErroreDatabaseException("Impossibile collegarsi");
@@ -282,6 +283,17 @@ public class DatabaseManager {
             ps.setTime(3, Time.valueOf(java.time.LocalTime.now()));
             ps.setNull(4, Types.TIME);
             return ps.executeUpdate() == 1;
+        } catch (SQLException e) {
+            return false;
+        }
+    }
+
+    public boolean chiudiNoleggio(String codiceVeicolo, LocalTime oraFine) {
+        String sql = "UPDATE noleggi SET oraFine = ? WHERE veicolo = ? AND oraFine IS NULL";
+        try (PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setTime(1, Time.valueOf(oraFine));
+            ps.setString(2, codiceVeicolo);
+            return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             return false;
         }
